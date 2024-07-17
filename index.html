@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="src/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+    <title> AI Recipes Generator!</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>🍪 AI Cookies Recipes Generator 🍪</h1></header>
+      <main>
+        <div class="form-container">
+          <form id="form">
+            <input
+              type="text"
+              placeholder="Enter the ingredient inspiring you today"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: chocholate, strawberry,jam...</div>
+        </div>
+        <br />
+
+        <div class="recipe hidden" id="recipe"></div>
+        <br />
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/nsmairat" target="_blank">Annalia Gallo</a>
+        and it is
+        <a href="https://github.com/nsmairat/ai-project" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and it is
+        <a href="https://ai-progetto.netlify.app/" target="_blank"
+          >hosted on Vercel</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
